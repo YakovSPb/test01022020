@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" href="img/favicon.png">
+	<meta property="og:image" content="">
+	<link rel="stylesheet" href="css/styles.min.css">
+
+</head>
+
+<body>
+
+	<header class="header">
+		<nav class="nav">
+			<div class="container">
+				<div class="header__line nav__line">
+					<div class="logo">
+						<a href="/"><img src="img/@2x/logo--dark.png" alt="alt"></a>
+					</div>
+					<div class="header__info">
+						<div class="phone header__phone nav__phone">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M18.2461 15.8762C17.462 15.1021 16.4832 15.1021 15.7041 15.8762C15.1098 16.4655 14.5155 17.0549 13.9312 17.6542C13.7713 17.819 13.6365 17.8539 13.4417 17.744C13.0572 17.5343 12.6477 17.3645 12.2781 17.1348C10.5551 16.051 9.11178 14.6577 7.83328 13.0895C7.19902 12.3104 6.63467 11.4764 6.24013 10.5375C6.16023 10.3477 6.17521 10.2228 6.33003 10.068C6.92434 9.49369 7.50366 8.90437 8.08798 8.31506C8.90203 7.49602 8.90203 6.53714 8.08298 5.7131C7.61853 5.24365 7.15407 4.78419 6.68961 4.31473C6.21017 3.83529 5.73572 3.35086 5.25129 2.87641C4.4672 2.11231 3.48834 2.11231 2.70925 2.88141C2.10995 3.47072 1.53562 4.07501 0.926333 4.65434C0.361991 5.18871 0.0773229 5.84295 0.0173928 6.60706C-0.0774965 7.8506 0.227148 9.02423 0.656647 10.1679C1.53562 12.5351 2.87406 14.6377 4.49717 16.5654C6.68961 19.1724 9.30656 21.235 12.368 22.7232C13.7464 23.3925 15.1747 23.9069 16.7279 23.9918C17.7967 24.0517 18.7256 23.782 19.4697 22.948C19.9791 22.3786 20.5534 21.8592 21.0928 21.3149C21.8919 20.5058 21.8969 19.527 21.1028 18.7279C20.1539 17.774 19.2 16.8251 18.2461 15.8762Z" fill="#FF3754"/> <path d="M17.2921 11.8961L19.135 11.5815C18.8453 9.88849 18.0462 8.35528 16.8326 7.1367C15.5491 5.8532 13.926 5.04414 12.1381 4.79443L11.8784 6.64727C13.2618 6.84205 14.5203 7.46632 15.5142 8.46016C16.4531 9.39906 17.0674 10.5877 17.2921 11.8961Z" fill="#FF3754"/> <path d="M20.1737 3.88547C18.0461 1.75795 15.3543 0.414516 12.3827 0L12.123 1.85284C14.6901 2.21242 17.0173 3.37606 18.8552 5.20892C20.5982 6.95189 21.7418 9.15432 22.1563 11.5765L23.9992 11.2619C23.5148 8.45513 22.1913 5.90811 20.1737 3.88547Z" fill="#FF3754"/></svg>
+							<div class="phone__text"><a href="tel:+74999999999">8 499 999 99 99</a></div>
+						</div>
+						<div class="social header__social">
+							<a href="/">
+								<img src="img/@2x/instagram.png" alt="">
+							</a>
+							<a href="">
+								<img src="img/@2x/vk.png" alt="">
+							</a>
+						</div>
+						<div id="btn--close" class="header__btn--close">
+						</div>
+					</div>
+				</div>
+			</div>
+				<div class="nav__menu">
+					<ul class="menu">
+						<li class="menu__item menu__item--phone"><div class="phone">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M18.2461 15.8762C17.462 15.1021 16.4832 15.1021 15.7041 15.8762C15.1098 16.4655 14.5155 17.0549 13.9312 17.6542C13.7713 17.819 13.6365 17.8539 13.4417 17.744C13.0572 17.5343 12.6477 17.3645 12.2781 17.1348C10.5551 16.051 9.11178 14.6577 7.83328 13.0895C7.19902 12.3104 6.63467 11.4764 6.24013 10.5375C6.16023 10.3477 6.17521 10.2228 6.33003 10.068C6.92434 9.49369 7.50366 8.90437 8.08798 8.31506C8.90203 7.49602 8.90203 6.53714 8.08298 5.7131C7.61853 5.24365 7.15407 4.78419 6.68961 4.31473C6.21017 3.83529 5.73572 3.35086 5.25129 2.87641C4.4672 2.11231 3.48834 2.11231 2.70925 2.88141C2.10995 3.47072 1.53562 4.07501 0.926333 4.65434C0.361991 5.18871 0.0773229 5.84295 0.0173928 6.60706C-0.0774965 7.8506 0.227148 9.02423 0.656647 10.1679C1.53562 12.5351 2.87406 14.6377 4.49717 16.5654C6.68961 19.1724 9.30656 21.235 12.368 22.7232C13.7464 23.3925 15.1747 23.9069 16.7279 23.9918C17.7967 24.0517 18.7256 23.782 19.4697 22.948C19.9791 22.3786 20.5534 21.8592 21.0928 21.3149C21.8919 20.5058 21.8969 19.527 21.1028 18.7279C20.1539 17.774 19.2 16.8251 18.2461 15.8762Z" fill="#FF3754"/> <path d="M17.2921 11.8961L19.135 11.5815C18.8453 9.88849 18.0462 8.35528 16.8326 7.1367C15.5491 5.8532 13.926 5.04414 12.1381 4.79443L11.8784 6.64727C13.2618 6.84205 14.5203 7.46632 15.5142 8.46016C16.4531 9.39906 17.0674 10.5877 17.2921 11.8961Z" fill="#FF3754"/> <path d="M20.1737 3.88547C18.0461 1.75795 15.3543 0.414516 12.3827 0L12.123 1.85284C14.6901 2.21242 17.0173 3.37606 18.8552 5.20892C20.5982 6.95189 21.7418 9.15432 22.1563 11.5765L23.9992 11.2619C23.5148 8.45513 22.1913 5.90811 20.1737 3.88547Z" fill="#FF3754"/></svg>
+							<div class="phone__text"><a href="tel:+74999999999">8 499 999 99 99</a></div>
+						</div></li>
+						<li class="menu__item"><a href="" class="menu__link">пункт меню 1</a></li>
+						<li class="menu__item"><a href="" class="menu__link">пункт меню 2</a></li>
+						<li class="menu__item"><a href="" class="menu__link">пункт меню 3</a></li>
+						<li class="menu__item"><a href="" class="menu__link">пункт меню 4</a></li>
+						<li class="menu__item"><a href="" class="menu__link">пункт меню 5</a></li>
+						<li class="menu__item menu__item--social">
+							<div class="social">
+								<a href="/">
+									<img src="img/@2x/instagram.png" alt="">
+								</a>
+								<a href="">
+									<img src="img/@2x/vk.png" alt="">
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="header__wrap">	
+				<div id="fixedHead" class="header__line">
+					<div class="logo">
+						<a class="logo__white" href="/"><img src="img/@2x/logo.png" alt="alt"></a>
+						<a class="logo__dark" href="/"><img src="img/@2x/logo--dark.png" alt="alt"></a>
+					</div>
+					<div class="header__info">
+						<div class="phone header__phone">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M18.2461 15.8762C17.462 15.1021 16.4832 15.1021 15.7041 15.8762C15.1098 16.4655 14.5155 17.0549 13.9312 17.6542C13.7713 17.819 13.6365 17.8539 13.4417 17.744C13.0572 17.5343 12.6477 17.3645 12.2781 17.1348C10.5551 16.051 9.11178 14.6577 7.83328 13.0895C7.19902 12.3104 6.63467 11.4764 6.24013 10.5375C6.16023 10.3477 6.17521 10.2228 6.33003 10.068C6.92434 9.49369 7.50366 8.90437 8.08798 8.31506C8.90203 7.49602 8.90203 6.53714 8.08298 5.7131C7.61853 5.24365 7.15407 4.78419 6.68961 4.31473C6.21017 3.83529 5.73572 3.35086 5.25129 2.87641C4.4672 2.11231 3.48834 2.11231 2.70925 2.88141C2.10995 3.47072 1.53562 4.07501 0.926333 4.65434C0.361991 5.18871 0.0773229 5.84295 0.0173928 6.60706C-0.0774965 7.8506 0.227148 9.02423 0.656647 10.1679C1.53562 12.5351 2.87406 14.6377 4.49717 16.5654C6.68961 19.1724 9.30656 21.235 12.368 22.7232C13.7464 23.3925 15.1747 23.9069 16.7279 23.9918C17.7967 24.0517 18.7256 23.782 19.4697 22.948C19.9791 22.3786 20.5534 21.8592 21.0928 21.3149C21.8919 20.5058 21.8969 19.527 21.1028 18.7279C20.1539 17.774 19.2 16.8251 18.2461 15.8762Z" fill="#FF3754"/> <path d="M17.2921 11.8961L19.135 11.5815C18.8453 9.88849 18.0462 8.35528 16.8326 7.1367C15.5491 5.8532 13.926 5.04414 12.1381 4.79443L11.8784 6.64727C13.2618 6.84205 14.5203 7.46632 15.5142 8.46016C16.4531 9.39906 17.0674 10.5877 17.2921 11.8961Z" fill="#FF3754"/> <path d="M20.1737 3.88547C18.0461 1.75795 15.3543 0.414516 12.3827 0L12.123 1.85284C14.6901 2.21242 17.0173 3.37606 18.8552 5.20892C20.5982 6.95189 21.7418 9.15432 22.1563 11.5765L23.9992 11.2619C23.5148 8.45513 22.1913 5.90811 20.1737 3.88547Z" fill="#FF3754"/></svg>
+							<div class="phone__text"><a href="tel:+74999999999">8 499 999 99 99</a></div>
+						</div>
+						<div class="social header__social">
+							<a href="/">
+								<img src="img/@2x/instagram.png" alt="">
+							</a>
+							<a href="">
+								<img src="img/@2x/vk.png" alt="">
+							</a>
+						</div>
+						<div id="btn--menu" class="header__btn">
+							<svg width="50" height="13" viewBox="0 0 50 13" fill="none" xmlns="http://www.w3.org/2000/svg"> <rect width="50" height="2" fill="white"/> <rect y="11" width="50" height="2" fill="white"/> </svg>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="header__promo">
+						<h1 class="h1">lorem ipsum dolor sit amet</h1>
+						<div class="header__desc"><span>lorem</span> ipsum dolor sit amet</div>
+					</div>
+				</div>
+			</div>
+			<div class="rewards">
+				<div class="container">
+					<div class="rewards__inner">
+						<table>
+							<tr>
+								<td><img src="img/@2x/cup_01.svg" alt=""></td>
+								<td><img src="img/@2x/flag_world.svg" alt=""></td>
+								<td><div class="rewards__selecte">Lorem ipsum dol</div></td>
+							</tr>
+							<tr>
+								<td><img src="img/@2x/cup_02.svg" alt=""></td>
+								<td><img src="img/@2x/flag_euro.svg" alt=""></td>
+								<td>lorem ipsum</td>
+							</tr>
+							<tr>
+								<td><img src="img/@2x/medal.svg" alt=""></td>
+								<td><img src="img/@2x/flag_euro.svg" alt=""></td>
+								<td>lorem ipsum dolor sit amet</td>
+							</tr>
+							<tr>
+								<td><img src="img/@2x/cup_02.svg" alt=""></td>
+								<td><img src="img/@2x/flag_russia.svg" alt=""></td>
+								<td>lorem ipsum</td>
+							</tr>
+						</table>
+					</div>
+					<div class="rewards__btn">
+						<a href="" class="btn">lorem ipsum dolor</a>
+					</div>
+				</div>		
+			</div>
+		</header>
+
+		<section class="sect-slider">
+			<div class="container">
+				<h2 class="h2">Второй блок</h2>
+				<div class="slider">
+
+					<div class="slider__slide">
+						<div class="slider__inner">
+							<div class="slider__gutter"></div>
+							<div class="slider__content">
+								<div class="slider__title">Лоремова</div>
+								<div class="slider__desc">Ипсума анатольевна</div>
+								<div class="slider__mini-desc">lorem ipsum dolor</div>
+								<div class="slider__hidden-btn">Скрыть</div>
+								<div class="slider__list">
+									<ul>
+										<li>lorem ipsum dolor lorem ipsum dolor</li>
+										<li>lorem ipsum dolor</li>
+										<li>lorem ipsum dolor lorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem</li>
+										<li>lorem ipsum dolor</li>
+										<li>lorem ipsum dolor</li>
+										<li>lorem ipsum dolor</li>
+									</ul>
+								</div>
+								<div class="slider__footer">
+									<strong>lorem ipsum dolor</strong>
+									<p>lorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolor</p>
+									<strong>lorem ipsum dolor</strong>
+									<p>lorem ipsum dolor lorem ipsum dolor</p>
+								</div>
+							</div>
+							<div class="slider__img">
+								<img src="img/@2x/wtf.png" alt="">
+							</div>
+							<div class="slider__gutter slider__gutter-reverse"></div>
+						</div>
+					</div>
+
+					<div class="slider__slide">
+						<div class="slider__inner">
+							<div class="slider__gutter"></div>
+							<div class="slider__content">
+								<div class="slider__title">Лоремова</div>
+								<div class="slider__desc">Ипсума анатольевна</div>
+								<div class="slider__mini-desc">lorem ipsum dolor</div>
+								<div class="slider__hidden-btn">Скрыть</div>
+								<div class="slider__list">
+									<ul>
+										<li>lorem ipsum dolor lorem ipsum dolor</li>
+										<li>lorem ipsum dolor</li>
+										<li>lorem ipsum dolor lorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem</li>
+										<li>lorem ipsum dolor</li>
+										<li>lorem ipsum dolor</li>
+										<li>lorem ipsum dolor</li>
+									</ul>
+								</div>
+								<div class="slider__footer">
+									<strong>lorem ipsum dolor</strong>
+									<p>lorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolor</p>
+									<strong>lorem ipsum dolor</strong>
+									<p>lorem ipsum dolor lorem ipsum dolor</p>
+								</div>
+							</div>
+							<div class="slider__img">
+								<img src="img/@2x/wtf.png" alt="">
+							</div>
+							<div class="slider__gutter slider__gutter-reverse"></div>
+						</div>
+					</div>
+
+					<div class="slider__slide">
+						<div class="slider__inner">
+							<div class="slider__gutter"></div>
+							<div class="slider__content">
+								<div class="slider__title">Лоремова</div>
+								<div class="slider__desc">Ипсума анатольевна</div>
+								<div class="slider__mini-desc">lorem ipsum dolor</div>
+								<div class="slider__hidden-btn">Скрыть</div>
+								<div class="slider__list">
+									<ul>
+										<li>lorem ipsum dolor lorem ipsum dolor</li>
+										<li>lorem ipsum dolor</li>
+										<li>lorem ipsum dolor lorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem</li>
+										<li>lorem ipsum dolor</li>
+										<li>lorem ipsum dolor</li>
+										<li>lorem ipsum dolor</li>
+									</ul>
+								</div>
+								<div class="slider__footer">
+									<strong>lorem ipsum dolor</strong>
+									<p>lorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolor</p>
+									<strong>lorem ipsum dolor</strong>
+									<p>lorem ipsum dolor lorem ipsum dolor</p>
+								</div>
+							</div>
+							<div class="slider__img">
+								<img src="img/@2x/wtf.png" alt="">
+							</div>
+							<div class="slider__gutter slider__gutter-reverse"></div>
+						</div>
+					</div>
+				</div>
+				<div class="counter">
+					<div class="counter__left">
+						<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0)"> <path d="M28.3137 12.6475L28.3605 12.6577H8.28586L14.5966 6.33309C14.9056 6.02431 15.0751 5.60602 15.0751 5.16699C15.0751 4.72797 14.9056 4.3126 14.5966 4.00309L13.6146 3.02065C13.3059 2.71187 12.8944 2.54114 12.4556 2.54114C12.0166 2.54114 11.6049 2.71065 11.2961 3.01943L0.478299 13.8363C0.168299 14.1463 -0.00121298 14.5592 6.53448e-06 14.9985C-0.00121298 15.4402 0.168299 15.8533 0.478299 16.1628L11.2961 26.9806C11.6049 27.2892 12.0163 27.4589 12.4556 27.4589C12.8944 27.4589 13.3059 27.2889 13.6146 26.9806L14.5966 25.9982C14.9056 25.6899 15.0751 25.2782 15.0751 24.8392C15.0751 24.4004 14.9056 24.0104 14.5966 23.7019L8.21464 17.3419H28.3361C29.2403 17.3419 30 16.5626 30 15.6589V14.2694C30 13.3658 29.2178 12.6475 28.3137 12.6475Z" fill="#888888"/> </g> <defs> <clipPath id="clip0"> <rect width="30" height="30" fill="white"/> </clipPath> </defs> </svg>
+					</div>
+					<div><span id="counter">1</span> из <span id="counterAll">3</span></div>
+					<div class="counter__right">
+						<svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M1.68633 15.3526L1.6395 15.3424L21.7141 15.3424L15.4034 21.667C15.0944 21.9758 14.9249 22.3941 14.9249 22.8331C14.9249 23.2722 15.0944 23.6875 15.4034 23.997L16.3854 24.9795C16.6941 25.2883 17.1056 25.459 17.5444 25.459C17.9834 25.459 18.3951 25.2895 18.7039 24.9807L29.5217 14.1639C29.8317 13.8539 30.0012 13.4409 30 13.0017C30.0012 12.56 29.8317 12.1468 29.5217 11.8373L18.7039 1.01947C18.3951 0.710935 17.9837 0.541179 17.5444 0.541179C17.1056 0.541179 16.6941 0.711179 16.3854 1.01947L15.4034 2.00191C15.0944 2.3102 14.9249 2.72191 14.9249 3.16094C14.9249 3.59971 15.0944 3.98972 15.4034 4.29825L21.7854 10.6583L1.66389 10.6582C0.759746 10.6582 -1.02183e-05 11.4375 -1.02973e-05 12.3412L-1.04188e-05 13.7307C-1.04978e-05 14.6343 0.782185 15.3526 1.68633 15.3526Z" fill="#888888"/> </svg>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="sect-third">
+			<div class="container">
+				<h2 class="h2">Третий блок</h2>
+				<div class="sect-third__secret-block">
+					<div class="sect-third__secret-item active">
+						2019
+					</div>
+					<div class="sect-third__secret-item">
+						2018
+					</div>
+					<div class="sect-third__secret-item">
+						2017
+					</div>
+					<div class="sect-third__secret-item">
+						2016
+					</div>
+					<div class="sect-third__secret-item">
+						2015
+					</div>
+					<div class="sect-third__secret-item">
+						2014
+					</div>
+					<div class="sect-third__secret-item">
+						2013
+					</div>
+					<div class="sect-third__secret-item">
+						2012
+					</div>
+					<div class="sect-third__secret-item">
+						2011
+					</div>
+				</div>
+				<div class="portfolio">
+					<div class="portfolio__item">
+						<div class="portfolio__img">
+							<img src="img/@2x/item_01.png" alt="">
+						</div>
+						<div class="portfolio__info">
+							<div class="portfolio__title">
+								<b>Lorem ipsum dolor sit amet.</b>
+							</div>
+							<div class="portfolio__desc">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nulla interdum felis placerat vulputate.
+							</div>
+						</div>
+					</div>
+					<div class="portfolio__item">
+						<div class="portfolio__img">
+							<img src="img/@2x/item_02.png" alt="">
+						</div>
+						<div class="portfolio__info">
+							<div class="portfolio__title">
+								<b>Lorem ipsum dolor sit amet.</b>
+							</div>
+							<div class="portfolio__desc">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nulla interdum felis placerat vulputate.
+							</div>
+						</div>
+					</div>
+					<div class="portfolio__item">
+						<div class="portfolio__img">
+							<img src="img/@2x/item_03.png" alt="">
+						</div>
+						<div class="portfolio__info">
+							<div class="portfolio__title">
+								<b>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</b>
+							</div>
+							<div class="portfolio__desc">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nulla interdum felis placerat vulputate.
+							</div>
+						</div>
+					</div>
+					<div class="portfolio__item">
+						<div class="portfolio__img">
+							<img src="img/@2x/item_04.png" alt="">
+						</div>
+						<div class="portfolio__info">
+							<div class="portfolio__title">
+								<b>Lorem ipsum dolor sit amet.</b>
+							</div>
+							<div class="portfolio__desc">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nulla interdum felis placerat vulputate.
+							</div>
+						</div>
+					</div>
+
+
+					<div class="portfolio__item">
+						<div class="portfolio__img">
+							<img src="img/@2x/item_01.png" alt="">
+						</div>
+						<div class="portfolio__info">
+							<div class="portfolio__title">
+								<b>Lorem ipsum dolor sit amet.</b>
+							</div>
+							<div class="portfolio__desc">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nulla interdum felis placerat vulputate.
+							</div>
+						</div>
+					</div>
+					<div class="portfolio__item">
+						<div class="portfolio__img">
+							<img src="img/@2x/item_02.png" alt="">
+						</div>
+						<div class="portfolio__info">
+							<div class="portfolio__title">
+								<b>Lorem ipsum dolor sit amet.</b>
+							</div>
+							<div class="portfolio__desc">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nulla interdum felis placerat vulputate.
+							</div>
+						</div>
+					</div>
+					<div class="portfolio__item">
+						<div class="portfolio__img">
+							<img src="img/@2x/item_03.png" alt="">
+						</div>
+						<div class="portfolio__info">
+							<div class="portfolio__title">
+								<b>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</b>
+							</div>
+							<div class="portfolio__desc">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nulla interdum felis placerat vulputate.
+							</div>
+						</div>
+					</div>
+					<div class="portfolio__item">
+						<div class="portfolio__img">
+							<img src="img/@2x/item_04.png" alt="">
+						</div>
+						<div class="portfolio__info">
+							<div class="portfolio__title">
+								<b>Lorem ipsum dolor sit amet.</b>
+							</div>
+							<div class="portfolio__desc">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nulla interdum felis placerat vulputate.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">	
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__copy">© Копирайт 2019</div>
+					<div class="footer__developer">
+						<a href=""><img src="img/@2x/triangle_logo.svg" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/scripts.min.js"></script>
+
+	</body>
+	</html>

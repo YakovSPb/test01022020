@@ -1,0 +1,578 @@
+@import vars
+@import fonts
+@import libs
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-size: 18px
+	min-width: 320px
+	position: relative
+	line-height: 160%
+	font-family: 'MuseoSans', sans-serif
+	overflow-x: hidden
+	color: $text
+
+.btn
+	background-color: $accent
+	letter-spacing: 2px
+	border: 5px solid $accent
+	border-radius: 4px
+	display: inline-block
+	font-size: 19px
+	line-height: 23px
+	text-transform: uppercase
+	text-decoration: none
+	color: #fff
+	height: 68px
+	width: 412px
+	display: flex
+	align-items: center
+	justify-content: center
+	transition: all .3s ease
+	&:hover
+		color: $accent
+		text-decoration: none
+		border-color: $accent
+		background: #fff
+	&__green
+		color: #fff
+		background: $accent
+		border: 5px solid $accent
+		&:hover
+			color: $accent
+			background: #fff
+
+h1, .h1
+	font-family: "BebasNeue", sans-serif
+	font-size: 90px
+	line-height: 90px
+	text-transform: uppercase
+	color: #fff
+	+media-breakpoint-down(md)
+		font-size: 50px
+		line-height: 50px
+h2, .h2
+	padding: 88px 0 60px 0
+	color: $accent
+	font-size: 70px
+	line-height: 70px
+	text-transform: uppercase
+	text-align: center
+	+media-breakpoint-down(md)
+		font-size: 40px
+		line-height: 40px
+		padding: 66px 0 34px
+
+.container
+	max-width: 1920px
+	padding: 0 88px
+	position: relative
+	margin: 0 auto
+	+media-breakpoint-down(md)
+		padding: 0 14px
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+// HEADER
+.header__wrap
+	.header__line
+		max-width: 1920px
+		padding: 0px 88px
+		height: 110px
+		position: fixed
+		width: 100%
+		+media-breakpoint-down(md)
+			padding: 0 14px
+			height: 60px
+	.active
+		background: #fff!important
+		.logo__white
+			display: none
+		.logo__dark
+			display: block
+		.header__btn
+			svg
+				rect
+					fill: $text
+		.phone__text
+			a
+				color: $text
+
+
+
+
+.nav
+	background: #fff
+	position: absolute
+	width: 100%
+	top: 0
+	left: 0
+	z-index: 1010
+	display: none
+	&__line
+		padding-top: 0!important
+		height: 
+		height: 110px
+		+media-breakpoint-down(md)
+			height: 60px
+	&__phone
+		a
+			color: $text!important
+	&__menu
+		height: auto
+		display: flex
+		justify-content: center
+		align-items: center
+		padding: 195px 0 207px
+		background: #efecf2
+		.menu
+			padding-left: 0
+		+media-breakpoint-down(md)
+			padding: 21px 0 150px
+			.phone
+				a
+					color: $text
+					font-size: 24px
+					line-height: 29px
+	&--active
+		display: block!important
+		position: fixed
+		height: 100%
+		overflow: auto
+.menu
+	list-style-type: none
+	&__item
+		margin-bottom: 30px
+		+media-breakpoint-down(md)
+			margin-bottom: 15px
+			text-align: center
+	&__item--phone
+		display: none
+		+media-breakpoint-down(md)
+			display: block
+	&__item--social
+		display: none
+		+media-breakpoint-down(md)
+			display: block
+			padding-top: 68px
+			.social
+				justify-content: center
+	&__link
+		font-size: 50px
+		line-height: 60px
+		color: $text
+		&:hover
+			text-decoration: none
+		+media-breakpoint-down(md)
+			font-size: 20px
+			line-height: 24px
+.header
+	position: relative
+	&__wrap
+		background: url('../img/_src/bg.jpg') no-repeat
+		background-size: cover
+		background-position: center center
+		height: 960px
+		+media-breakpoint-down(md)
+			height: 300px
+		+media-breakpoint-down(xs)
+			height: 300px
+	&__line
+		padding-top: 25px
+		display: flex
+		align-items: center
+		justify-content: space-between
+		position: relative
+		z-index: 1000
+		+media-breakpoint-down(md)
+			padding-top: 18px
+	&__info
+		display: flex
+		align-items: center
+	&__phone
+		margin-right: 46px
+		+media-breakpoint-down(md)
+			display: none!important
+	&__social
+		margin-right: 56px
+		+media-breakpoint-down(md)
+			display: none!important
+	&__btn
+		cursor: pointer
+		position: relative
+		svg
+			+media-breakpoint-down(md)
+				width: 35px
+	&__btn--close
+		width: 50px
+		height: 50px
+		position: relative
+		cursor: pointer
+		+media-breakpoint-down(md)
+			width: 35px
+			height: 35px
+		&:after
+			content: ''
+			position: absolute
+			width: 50px
+			height: 2px
+			background: $text
+			transform: rotate(45deg)
+			top: 24px
+			left: 0
+			+media-breakpoint-down(md)
+				width: 35px
+				top: 14px
+		&:before
+			content: ''
+			position: absolute
+			width: 50px
+			height: 2px
+			background: $text
+			transform: rotate(-45deg)
+			top: 24px
+			left: 0
+			+media-breakpoint-down(md)
+				width: 35px
+				top: 14px
+	&__promo
+		padding-top: 188px
+		position: relative
+		+media-breakpoint-down(md)
+			padding-top: 157px
+	&__desc
+		font-size: 50px
+		line-height: 60px
+		color: #fff
+		+media-breakpoint-down(md)
+			font-size: 20px
+			line-height: 24px
+		span
+			color: $accent
+
+.logo
+	img
+		+media-breakpoint-down(md)
+			width: 102px
+			height: 27px
+	&__dark
+		display: none
+.phone
+	display: flex
+	align-items: center
+	&__text
+		margin-left: 19px
+		a
+			font-size: 24px
+			line-height: 29px
+			color: #fff
+			&:hover
+				text-decoration: none
+.social
+	display: flex
+	align-items: center
+	position: relative
+	a
+		margin-right: 
+		height: 34px
+		width: 34px
+		margin-right: 30px
+		&:last-child
+			margin-right: 0
+
+.rewards
+	position: absolute
+	bottom: 0
+	left: 0
+	+media-breakpoint-down(md)
+		position: static
+	&__btn
+		padding: 132px 0 84px
+		+media-breakpoint-down(md)
+			padding: 13px 0 15px
+			margin: 0 auto
+			.btn
+				font-size: 16px
+				line-height: 19px
+				width: 100%
+				min-width: 300px
+	.container
+		+media-breakpoint-down(md)
+			display: flex
+			flex-direction: column-reverse
+	&__inner
+		table
+			+media-breakpoint-down(md)
+				margin: 0 auto
+			tr
+				td
+					font-size: 24px
+					line-height: 29px
+					color: #fff
+					margin-bottom: 32px
+					+media-breakpoint-down(md)
+						color: $text
+						font-size: 14px
+						line-height: 17px
+					&:first-child
+						text-align: center
+					&:nth-child(2n)
+						padding-right: 60px
+						+media-breakpoint-down(md)
+							padding-right: 14px
+	&__selecte
+		font-size: 36px
+		line-height: 50px
+		border-radius: 4px
+		padding: 0 10px
+		background: $accent
+		+media-breakpoint-down(md)
+			font-size: 20px
+			line-height: 36px
+			color: #fff
+
+
+
+// SECT TWO
+// slider
+.sect-slider
+	padding-bottom: 85px
+	+media-breakpoint-down(md)
+		padding-bottom: 60px
+.slider
+	&__hidden-btn
+		display: none
+		+media-breakpoint-down(md)
+			width: 156px
+			height: 40px
+			border: 1px solid #888888
+			border-radius: 4px
+			display: block
+			font-size: 13px
+			line-height: 16px
+			text-align: center
+			letter-spacing: 0.155em
+			text-transform: uppercase
+			display: flex
+			justify-content: center
+			align-items: center
+			margin: 0 auto 24px auto
+			cursor: pointer	
+	&__inner
+		display: flex
+		justify-content: space-between
+		position: relative
+		+media-breakpoint-down(md)
+			flex-direction: column-reverse
+			justify-content: center
+			align-items: center
+	&__gutter
+		position: relative
+		width: 30px
+		height: auto
+		background: $accent
+		+media-breakpoint-down(md)
+			display: none
+		&:after
+			content: ''
+			display: block
+			width: 56px
+			height: 30px
+			background: $accent
+			position: absolute
+			top: 0
+			left: 0
+		&:before
+			content: ''
+			display: block
+			width: 52px
+			height: 30px
+			background: $accent
+			position: absolute
+			bottom: 0
+			left: 0
+	&__content
+		max-width: 708px
+		padding-left: 50px
+		+media-breakpoint-down(md)
+			padding-left: 0
+	&__title
+		font-size: 70px
+		line-height: 70px
+		color: $accent
+		text-transform: uppercase
+		font-family: "BebasNeue", sans-serif
+		+media-breakpoint-down(md)
+			text-align: center
+			font-size: 40px
+			line-height: 40px
+			margin-top: 27px
+	&__desc
+		font-size: 40px
+		line-height: 40px
+		margin-top: 5px
+		text-transform: uppercase
+		color: #888888
+		font-family: "BebasNeue", sans-serif
+		+media-breakpoint-down(md)
+			text-align: center
+			font-size: 30px
+			line-height: 30px
+			margin-top: 14px
+	&__mini-desc
+		font-size: 13px
+		line-height: 16px
+		letter-spacing: 0.155em
+		text-transform: uppercase
+		color: #888888
+		margin: 17px 0 39px
+		+media-breakpoint-down(md)
+			text-align: center
+			font-size: 13px
+			line-height: 16px
+			color: $text
+			margin: 24px 0 43px
+	&__list
+		margin-bottom: 10px
+		+media-breakpoint-down(md)
+			margin-bottom: 50px
+		ul
+			list-style-type: none
+			padding-left: 30px
+			li
+				position: relative
+				font-size: 18px
+				line-height: 160%
+				+media-breakpoint-down(md)
+					margin-bottom: 15px
+				&:before
+					content: ''
+					width: 10px
+					height: 10px
+					background: $accent
+					border-radius: 3px
+					position: absolute
+					top: 9px
+					left: -30px
+	&__footer
+		margin-bottom: 20px
+		strong
+			margin-top: 20px
+			display: block
+		p
+			margin-bottom: 0
+	&__gutter-reverse
+		right: 0
+		left: auto
+		transform: scale(-1, -1)
+	&__img
+		display: flex
+		align-items: center
+		padding-right: 50px
+		+media-breakpoint-down(md)
+			padding-right: 0
+		img
+			width: 100%
+			+media-breakpoint-down(md)
+				width: 128px
+				height: 128px
+
+.counter
+	display: flex
+	justify-content: center
+	margin: 60px auto 0
+	width: 300px
+	font-size: 24px
+	line-height: 29px
+	+media-breakpoint-down(md)
+		margin-top: 15px
+	&__left
+		margin-right: 50px	
+		cursor: pointer
+		path
+			transition: all .5s ease
+		&:hover
+			path
+				fill: $accent
+	&__right
+		margin-left: 50px
+		cursor: pointer
+		path
+			transition: all .5s ease
+		&:hover
+			path
+				fill: $accent
+
+// SECTION thir
+.sect-third
+	background: linear-gradient(180deg, #FDF4F4 0%, #ECF3EC 100%)
+	&__secret-block
+		display: none
+		justify-content: center
+		flex-wrap: wrap
+		+media-breakpoint-down(md)
+			display: flex
+		.active
+			background: $accent
+			border: 1px solid $accent
+			color: #fff
+	&__secret-item
+		width: 63px
+		height: 40px
+		font-size: 13px
+		line-height: 16px
+		text-align: center
+		letter-spacing: 0.155em
+		text-transform: uppercase
+		border: 1px solid #888888
+		border-radius: 4px
+		display: flex
+		align-items: center
+		justify-content: center
+		margin: 5px
+		cursor: pointer
+.portfolio
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	padding-bottom: 66px
+	+media-breakpoint-down(md)
+		margin-top: 40px
+	&__item
+		max-width: 412px
+		margin-bottom: 56px
+		+media-breakpoint-down(md)
+			margin-bottom: 20px
+	&__info
+		height: 180px
+		overflow: hidden
+	&__img
+		img
+			width: 100%
+	&__title
+		margin: 26px 0 10px
+
+// FOOTER
+.footer
+	height: 68px
+	background: #fff
+	&__inner
+		display: flex
+		height: 68px
+		justify-content: space-between
+		align-items: center
